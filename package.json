@@ -2,6 +2,7 @@
   "name": "te-backend",
   "version": "1.0.0",
   "description": "backend from chai and code youtube channel",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
