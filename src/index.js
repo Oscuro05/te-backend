@@ -7,6 +7,14 @@ dotenv.config({
 })
 
 connectDB()
+.then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+        console.log(`Server is running at port : ${process.env.PORT}`);
+    })
+})
+.catch((err) => {
+    console.log("MONGO DB connection failed !!!", err);
+})
 
 //immediately invoked function expression (IIFE), used to make sure that the code runs immediately wehn the file is executed
 // ( async () => {
