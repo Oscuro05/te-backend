@@ -2,6 +2,9 @@
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
 
+import express from 'express'; // If using ES Modules
+const app = express();
+
 dotenv.config({
     path: './env'
 })
